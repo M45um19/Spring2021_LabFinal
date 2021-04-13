@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2021 at 04:28 PM
+-- Generation Time: Apr 13, 2021 at 11:12 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,27 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `exam`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `ques_1_user`
---
-
-CREATE TABLE `ques_1_user` (
-  `Names` varchar(20) NOT NULL,
-  `id` varchar(30) NOT NULL,
-  `age` int(11) NOT NULL,
-  `username` text NOT NULL,
-  `passwordd` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `ques_1_user`
---
-
-INSERT INTO `ques_1_user` (`Names`, `id`, `age`, `username`, `passwordd`) VALUES
-('Naim Istiak', '181-15-1793', 22, 'naimistiak', '0147');
 
 -- --------------------------------------------------------
 
@@ -80,17 +59,11 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`username`, `password`) VALUES
 ('1', '1'),
-('RakibHasan', 'rakib');
+('naim', 'naim');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `ques_1_user`
---
-ALTER TABLE `ques_1_user`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `student`
